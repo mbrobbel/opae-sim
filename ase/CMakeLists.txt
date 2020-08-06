@@ -27,7 +27,7 @@
 ## Install target for ASE support files
 project(ase)
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake/modules")
 include(ase_libs)
 include(opae_devpkgs_cmake_install)
 
